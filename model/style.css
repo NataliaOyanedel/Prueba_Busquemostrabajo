@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lemonchiffon;
+
+ }
+
+ .navbar {
+   background-color: lightblue;
+   font-family: 'pacifico';
+   font-weight: bold;
+
+ }
+
+
+ .img { 
+padding-left: 20px;
+ }
+ 
+
+
+ .homePais .header-search-pp.searchHome {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto;
+  position: relative;
+ }
