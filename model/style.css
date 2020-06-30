@@ -1,12 +1,14 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: lemonchiffon;
+  background-color: palevioletred;
+  font-weight: bold;
+  
 
  }
 
  .navbar {
-   background-color: lightblue;
+   background-color: pink;
    font-family: 'pacifico';
    font-weight: bold;
 
@@ -19,9 +21,112 @@ padding-left: 20px;
  
 
 
- .homePais .header-search-pp.searchHome {
-  width: 100%;
-  max-width: 820px;
+ h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: whitesmoke;
+  font-style: italic;
+ 
+
+}
+
+
+.formulario{
+  background-color: palevioletred;  
   margin: 0 auto;
-  position: relative;
- }
+  padding: 4rem;   
+}
+
+.form1 {
+  padding-top: 2rem;
+  width: 20%;
+}
+
+#form2, #check, #boton, #cargando { 
+  display: none;
+  align-items: center;
+}
+
+#empleos {
+  padding: 1rem;
+  min-height: 28rem;
+  color: palevioletred;
+  background-color: palevioletred;
+}
+
+.card {
+  margin-top: 3rem;
+  background-color: purple;
+}
+
+#cargando {
+  font-size: 4rem;
+}
+
+.Form1__tipo-busqueda, .input__form2 {
+  border-radius: .5rem;
+}
+
+.form2{
+  padding-top: 1rem;
+}
+
+#btn-buscar-empleo {
+  padding-top: 1rem;
+}
+
+.form__button {
+  margin-top: 1rem;
+  align-items: center;
+}
+
+
+.imagen-empresa{
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;    
+  color: purple;
+}
+
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: none;
+}
+
+
+.footer{
+  background-color: paleturquoise;
+}
+
+@media (min-width: 320px) {
+  h1 {
+      font-size: 46px;
+  }
+
+  .form-group{
+      width: 15rem;
+      margin-left: -5rem;
+      align-items: center;
+  }
+  
+  .form-check{
+      margin-left: -5rem;
+      font-size: 18px;
+      width: 13rem;
+      align-items: center;
+  }
+
+}
+
+@media (min-width: 488px){
+  .form-group{
+      width: 100%;
+      margin-left: 0;
+      
+  }
+
+  .form1 {
+      width: 80%;
+  }
+}

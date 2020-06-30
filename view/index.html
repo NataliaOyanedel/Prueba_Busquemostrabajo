@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../model/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+  
+    <meta name="author" content="Natalia Oyanedel"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
     <title>Prueba Busquemos trabajo</title>
+    <link rel="stylesheet" href="../model/style.css">
 </head>
 <body>
 
-<!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
+<!-- Navbar-->
+<section>
+<nav class="navbar ">
   <a class="navbar-brand">
     <img class="img" src="../img/logo.png" width="200" height="60" class="d-inline-block align-top" alt="">
     JOBS
   </a>
 </nav>
+</section>
+<!-- Navbar end-->
+
+<section class="formulario">
+    <h1 class="text-white text-center font-weight-bold">Busquemos Trabajo</h1>
+    <form id="form1" class="container form1">
+        <section >
+            <div class="form-group">
+                <label for="tipo" >Busca tu nuevo empleo</label>
+                <select class="Form1__tipo-busqueda form-control" id="tipo-busqueda" name="tipo">
+                    <option selected> Seleccionar</option>
+                    <option value="ubicacion">Ubicación</option>
+                               
+                </select>
+            </div>                          
+        </section>
+
+        <section id="form2" class="form2 form-group">
+                <label class="" for="nombre">Ubicación</label>
+                <input class="input__form2 form-control" type="text" name="ubicacion" id="ubicacion"  placeholder="Ingrese nombre de ciudad" class="">    
+        </section>
 
 
-<section class="titulo">
-<h1>Busquemos Trabajo</h1>
+ 
+
+        <section id="check">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="fulltime">
+                <label class="form-check-label full-time" for="fulltime">Sólo full-time</label>
+            </div>
+        </section>
+
+        <section id="boton">           
+            <div class="form__button form-group">
+                <button type="button" id="button" class="btn btn-info btn-buscar-empleo"> <i class="fas fa-search"></i>Buscar</button>
+            </div>
+        </section>    
+    </form>
+</section>
+
+<section id="cargando" class="container text-center text-white">
+    <i class="fas fa-sync fa-spin"></i>
+</section>
+
+<section id="empleos">
+    
 </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4 footer">
   
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://jobs.github.com/"> Github JOBS</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="../controller/script.js"></script>
 </body>
 </html>
